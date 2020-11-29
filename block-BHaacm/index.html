@@ -1,0 +1,156 @@
+<!-- writeCode
+
+- Create a responsive layout according to the design shown below.
+
+#### Large Screen view(Above 768px)
+
+![Responsive Layout Assignment](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/rwd/ex-1-desktop-view.png)
+
+#### Small Screen view(Below 768px)
+
+![Responsive Layout Assignment](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/rwd/ex-1-mob-view.png)
+
+- Using CSS resets is necessary.
+
+- Use semantic tags and keep the nesting and indentation proper.
+
+- Pay attention to the codes, your code quality matters a lot.
+
+- Try to implement the layout as exactly as it has been provided in the design.
+
+- Pay attention to minor things like spacing, alignment, size, etc.
+
+- Use any font-family which suits better for the assignment.
+
+- Once you are done with the assignment connect with the mentor and get the code reviewed. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Responsive Blog | Altcampus</title>
+
+    <!-- Stylesheets link  -->
+    <link rel="stylesheet" href="./assets/stylesheets/style.css" />
+
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons Link -->
+    <script
+      src="https://kit.fontawesome.com/67427b16f1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <div class="container center flex">
+        <div>
+          <a href="#"><img src="./assets/logo.png" alt="Logo" /></a>
+        </div>
+        <nav class="header-nav">
+          <ul class="upper-case">
+            <li><a href="">Home</a></li>
+            <li><a class="active" href="">Blog</a></li>
+            <li><a href="">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main section -->
+    <main>
+      <!-- Main Article -->
+      <article class="main-article">
+        <div class="container flex row-reverse">
+          <div class="main-article-img">
+            <img
+              class="full flex-40"
+              src="./assets/01.png"
+              alt="Article Image One"
+            />
+          </div>
+          <div class="main-article-text flex-50">
+            <h1 class="heading">What is Lorem Ipsum ?</h1>
+            <p class="para">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
+              laudantium optio repudiandae impedit at sequi ratione quas nulla
+              eaque aut debitis velit excepturi eum deleniti ipsam ipsa
+              consectetur, distinctio atque. Lorem ipsum dolor, sit amet
+              consectetur adipisicing elit. Hic laudantium optio repudiandae
+              impedit at sequi ratione quas nulla eaque aut debitis velit
+              excepturi eum deleniti ipsam ipsa consectetur, distinctio atque.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
+            </p>
+            <a class="btn" href="#">Read More</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Blog Article -->
+      <section class="blog">
+        <div class="container">
+          <h3 class="center heading">Our Blog</h3>
+          <div class="blog-article-div flex">
+            <article class="blog-article flex-30">
+              <div class="blog-article-img">
+                <img src="./assets/02.png" alt="Blog Article" class="full" />
+              </div>
+              <h4 class="heading">Why do we use it?</h4>
+              <p class="para">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Temporibus nisi est, eos nemo tenetur ipsam perferendis? Nihil,
+                rerum? Repudiandae molestiae fuga eveniet quod quidem deleniti
+                cumque itaque velit voluptates necessitatibus?
+              </p>
+              <a class="btn" href="#">Read More</a>
+            </article>
+            <article class="blog-article flex-30">
+              <div class="blog-article-img">
+                <img src="./assets/03.png" alt="Blog Article" class="full" />
+              </div>
+              <h4 class="heading">Why do we use it?</h4>
+              <p class="para">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Temporibus nisi est, eos nemo tenetur ipsam perferendis? Nihil,
+                rerum? Repudiandae molestiae fuga eveniet quod quidem deleniti
+                cumque itaque velit voluptates necessitatibus?
+              </p>
+              <a class="btn" href="#">Read More</a>
+            </article>
+            <article class="blog-article flex-30">
+              <div class="blog-article-img">
+                <img src="./assets/04.png" alt="Blog Article" class="full" />
+              </div>
+              <h4 class="heading">Why do we use it?</h4>
+              <p class="para">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Temporibus nisi est, eos nemo tenetur ipsam perferendis? Nihil,
+                rerum? Repudiandae molestiae fuga eveniet quod quidem deleniti
+                cumque itaque velit voluptates necessitatibus?
+              </p>
+              <a class="btn" href="#">Read More</a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer-->
+    <footer class="footer center ">
+      <div class="container flex">
+        <p>&copy; AltCampus</p>
+        <div class="footer-icon">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-twitter-square"></i>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
