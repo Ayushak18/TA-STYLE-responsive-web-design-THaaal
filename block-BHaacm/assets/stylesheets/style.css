@@ -1,0 +1,311 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Custom Styles */
+
+/* General Classes */
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+/* .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+.stretch {
+  align-items: stretch;
+}
+
+.center {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.upper-case {
+  text-transform: uppercase;
+}
+
+.active {
+  color: #58b768 !important;
+}
+
+.full {
+  width: 100%;
+}
+
+.btn {
+  background: #58b768;
+  color: white;
+  padding: 1em;
+  display: inline-block;
+  border-radius: 0.2em;
+}
+
+.heading {
+  font-size: 1.7em;
+  color: #020511;
+  margin: 0.5em 0;
+}
+
+.para {
+  color: #848588;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+/* Specific Styles */
+
+.header {
+  background: #222946;
+}
+
+.header-nav {
+  margin-top: 1em;
+}
+
+.header li {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+.header a {
+  color: white;
+  font-weight: 700;
+}
+
+/* Main Article */
+
+.main-article {
+  background-color: aliceblue;
+}
+
+/* Blog Article */
+
+.blog-article {
+  margin: 2em 0;
+}
+
+/* Footer */
+
+.footer {
+  background: #222946;
+  padding: 1.5em 0;
+  color: #bcc0d2;
+  font-weight: 700;
+}
+
+.footer-icon {
+  margin-top: 1em;
+}
+
+.footer-icon i {
+  margin: 0 0.2em;
+}
+
+/* ---------------Web Approach------------------ */
+
+@media screen and (min-width: 768px) {
+  /* General Classes */
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .container {
+    padding: 1em;
+  }
+
+  .heading {
+    margin-top: 0;
+    font-size: 2.3em;
+    margin-bottom: 0.5em;
+  }
+
+  .flex-50 {
+    flex: 0 1 50%;
+  }
+
+  .flex-30 {
+    flex: 0 1 30%;
+  }
+
+  .row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  /* Specific Classes*/
+
+  /* Header */
+  .header a {
+    font-size: 1.2em;
+  }
+
+  /* Main Article */
+  .main-article {
+    padding: 2em;
+    margin-bottom: 1.5em;
+  }
+
+  .main-article-text {
+    padding-right:2em;
+  }
+
+  .main-article p {
+    line-height: 2;
+    font-size: 1.1em;
+  }
+
+  /* Blog Article */
+
+  .blog-article-img img {
+      margin-bottom: 1em;
+  }
+}
+
+/* Footer */
+
+.footer{
+    font-size: 1.2em;
+    font-weight: 500;
+}
