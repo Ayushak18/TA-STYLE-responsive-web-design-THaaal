@@ -1,0 +1,344 @@
+<!-- writeCode
+
+- Create a responsive layout according to the design shown below.
+
+#### Large Screen view(Above 768px)
+
+![Responsive Layout Assignment](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/rwd/ex-2.png)
+
+#### Small Screen view(Below 768px)
+
+1. Figure what would be the best possible way to display the layout on small screens.
+
+2. Create hmaburger icon to toggle menu on mobile view.
+
+- Using CSS resets is necessary.
+- Use semantic tags and keep the nesting and indentation proper.
+- Pay attention to the codes, your code quality matters a lot.
+- Try to implement the layout as exactly as it has been provided in the design.
+- Pay attention to minor things like spacing, alignment, size, etc.
+- Use "Nunito" font-family for the assignment.
+- Figure out the best possible way to display the layout on small screens.
+- Create hmaburger icon to toggle menu on small screen view.
+- Once you are done with the assignment connect with the mentor and get the code reviewed. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Alt Event | Assingnment Two</title>
+
+    <!-- Link for the stylesheets -->
+    <link rel="stylesheet" href="./assets/stylesheets/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/67427b16f1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <header class="header full">
+      <div class="container flex">
+        <a href="#" class="brand"><h4>Alt Events</h4></a>
+        <nav>
+          <ul class="flex uppercase">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a class="btn" href="">Join Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+      <!-- Hero Sectin -->
+      <section class="hero padding">
+        <div class="container flex">
+          <div class="hero-text flex-60">
+            <h1 class="heading">
+              Web Developer Conference <span class="active">2020</span>
+            </h1>
+            <p class="para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut earum
+              repellendus dolorem ad laborum odit vitae ipsum maiores optio?
+              Aliquid voluptas tempora, explicabo vel dolores cumque. Rem animi
+              quibusdam aperiam?
+            </p>
+            <a href="#" class="btn btn-main">Register Now</a>
+          </div>
+          <div class="hero-img flex-35">
+            <img class="full" src="./assets/hero.png" alt="Hero Img" />
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about padding">
+        <div class="container flex flex-mobile flex-column">
+          <div class="about-img flex-48">
+            <img class="full" src="./assets/about.png" alt="About Image" />
+          </div>
+          <div class="about-text flex-48">
+            <h4 class="heading">About the Event</h4>
+            <p class="para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+              inventore officia vel, fuga id alias dolore porro adipisci error a
+              ullam ut recusandae, explicabo doloribus eveniet corrupti minima
+              unde possimus.
+            </p>
+            <a href="#" class="btn btn-main">Know More</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="services padding">
+        <h4 class="heading middle">Why you should join ?</h4>
+        <div class="container flex padding">
+          <div class="services-card flex-30">
+            <h4>Network</h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum
+              facilis sed reiciendis quam quas porro placeat, atque consectetur,
+              ipsa incidunt magnam ab repellendus quisquam aspernatur? Natus
+              dolorum magni neque a.
+            </p>
+          </div>
+          <div class="services-card flex-30">
+            <h4>Great Speaker</h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum
+              facilis sed reiciendis quam quas porro placeat, atque consectetur,
+              ipsa incidunt magnam ab repellendus quisquam aspernatur? Natus
+              dolorum magni neque a.
+            </p>
+          </div>
+          <div class="services-card flex-30">
+            <h4>Information</h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum
+              facilis sed reiciendis quam quas porro placeat, atque consectetur,
+              ipsa incidunt magnam ab repellendus quisquam aspernatur? Natus
+              dolorum magni neque a.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Schedule Section -->
+      <section class="schedule padding">
+        <h4 class="heading middle">Schedule</h4>
+        <div class="container padding flex schedule-div">
+          <div class="schedule-dates middle flex-20">
+            <div class="dates flex center active-date">06 Sept</div>
+            <div class="dates flex center">07 Sept</div>
+            <div class="dates flex center">08 Sept</div>
+            <div class="dates flex center">09 Sept</div>
+          </div>
+          <div class="schedule-articles flex-75">
+            <article class="flex schedule-article">
+              <div class="schedule-article-img flex-25">
+                <img
+                  class="full"
+                  src="./assets/schedule-01.jpg"
+                  alt="Schedule Image One"
+                />
+              </div>
+              <div class="schedule-article-text flex-70">
+                <h4 class="heading">Digital World Event Conversation</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                  minima libero quaerat dolores! Praesentium ipsum ad alias
+                  debitis accusantium.
+                </p>
+                <a class="mobile-link btn" href="#">06 Sept</a>
+              </div>
+            </article>
+            <article class="flex schedule-article">
+              <div class="schedule-article-img flex-25">
+                <img
+                  class="full"
+                  src="./assets/schedule-02.jpg"
+                  alt="Schedule Image One"
+                />
+              </div>
+              <div class="schedule-article-text flex-70">
+                <h4 class="heading">Digital World Event Conversation</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                  minima libero quaerat dolores! Praesentium ipsum ad alias
+                  debitis accusantium.
+                </p>
+                <a class="mobile-link btn" href="#">07 Sept</a>
+              </div>
+            </article>
+            <article class="flex schedule-article">
+              <div class="schedule-article-img flex-25">
+                <img
+                  class="full"
+                  src="./assets/schedule-03.jpg"
+                  alt="Schedule Image One"
+                />
+              </div>
+              <div class="schedule-article-text flex-70">
+                <h4 class="heading">Digital World Event Conversation</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                  minima libero quaerat dolores! Praesentium ipsum ad alias
+                  debitis accusantium.
+                </p>
+                <a class="mobile-link btn" href="#">08 Sept</a>
+              </div>
+            </article>
+            <article class="flex schedule-article">
+              <div class="schedule-article-img flex-25">
+                <img
+                  class="full"
+                  src="./assets/schedule-04.jpg"
+                  alt="Schedule Image One"
+                />
+              </div>
+              <div class="schedule-article-text flex-70">
+                <h4 class="heading">Digital World Event Conversation</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                  minima libero quaerat dolores! Praesentium ipsum ad alias
+                  debitis accusantium.
+                </p>
+                <a class="mobile-link btn" href="#">09 Sept</a>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="schedule-btn container middle">
+          <a class="btn btn-main" href="#">Download Schedule</a>
+        </div>
+      </section>
+
+      <!-- Info -->
+      <section class="info padding">
+        <div class="container flex flex-mobile flex-column">
+          <div class="info-card flex-20 middle">
+            <img src="./assets/speaker.png" alt="Speaker" />
+            <h4 class="heading">20+</h4>
+            <p class="para">Great Speaker</p>
+          </div>
+          <div class="info-card active-card flex-20 middle">
+            <img src="./assets/idea.png" alt="Speaker" />
+            <h4 class="heading">50+</h4>
+            <p class="para">Total Topic</p>
+          </div>
+          <div class="info-card flex-20 middle">
+            <img src="./assets/participants.png" alt="Speaker" />
+            <h4 class="heading">300+</h4>
+            <p class="para">Participants</p>
+          </div>
+          <div class="info-card flex-20 middle">
+            <img src="./assets/sponsor.png" alt="Speaker" />
+            <h4 class="heading">20+</h4>
+            <p class="para">Sponsors</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Video Section -->
+      <section class="video">
+        <div class="container padding video-div">
+          <iframe
+            src="https://www.youtube.com/embed/Te5rOTcE4J4"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- News Section -->
+      <section class="news">
+        <h3 class="heading middle padding">Our Latest News</h3>
+        <div class="container padding flex">
+          <article class="news-article flex-30">
+            <img class="full" src="./assets/news-01.png" alt="News-One" />
+            <h4>How to build a great portfolio as a beginner developer</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Temporibus laudantium magni pariatur ex, alias, nostrum voluptatem
+              esse fugit atque fuga amet commodi. Sed qui sint odit dolorum, non
+              quidem numquam.
+            </p>
+            <a href="#">Read More</a>
+          </article>
+          <article class="news-article flex-30">
+            <img class="full" src="./assets/news-02.png" alt="News-One" />
+            <h4>How to build a great portfolio as a beginner developer</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Temporibus laudantium magni pariatur ex, alias, nostrum voluptatem
+              esse fugit atque fuga amet commodi. Sed qui sint odit dolorum, non
+              quidem numquam.
+            </p>
+            <a class="active" href="#">Read More</a>
+          </article>
+          <article class="news-article flex-30">
+            <img class="full" src="./assets/news-03.png" alt="News-One" />
+            <h4>How to build a great portfolio as a beginner developer</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Temporibus laudantium magni pariatur ex, alias, nostrum voluptatem
+              esse fugit atque fuga amet commodi. Sed qui sint odit dolorum, non
+              quidem numquam.
+            </p>
+            <a href="#">Read More</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer ">
+      <div class="footer-div container padding">
+        <div class="upper-footer flex">
+          <div class="footer-img">
+            <img src="./assets/footer-logo.png" alt="Footer Logo" />
+          </div>
+          <div class="quick-links">
+            <h4>Quick Links</h4>
+            <nav>
+              <ul class="flex">
+                <li>Program</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>Services</li>
+              </ul>
+            </nav>
+          </div>
+          <div class="social">
+            <h4>Follow Us</h4>
+            <i class="fab fa-facebook-square "></i>
+            <i class="fab fa-twitter-square "></i>
+          </div>
+        </div>
+      </div>
+      <div class="footer-div">
+        <div class="lower-footer middle">
+          <p>&copy; AltCampus Services Pvt Ltd, 2018-present</p>
+        </div>
+      </div>
+      
+    </footer>
+  </body>
+</html>
