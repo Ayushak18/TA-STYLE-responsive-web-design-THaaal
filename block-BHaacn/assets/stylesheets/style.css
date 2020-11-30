@@ -1,0 +1,561 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*------------------- Custom Styles */
+
+/* Desktop Approach -----------------*/
+
+/* General Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.center {
+  justify-content: center;
+}
+
+.align-top {
+  align-items: stretch;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.btn {
+  background: #f04b4b;
+  padding: 0.5em 1.5em;
+  color: white;
+  border-radius: 0.3em;
+  display: inline-block;
+}
+
+.flex-75 {
+  flex: 0 1 75%;
+}
+
+.flex-70 {
+  flex: 0 1 70%;
+}
+
+.flex-60 {
+  flex: 0 1 60%;
+}
+
+.flex-48 {
+  flex: 0 1 48%;
+}
+
+.flex-35 {
+  flex: 0 1 35%;
+}
+
+.flex-30 {
+  flex: 0 1 30%;
+}
+
+.flex-25 {
+  flex: 0 1 25%;
+}
+
+.flex-20 {
+  flex: 0 1 20%;
+}
+
+.full {
+  width: 100%;
+}
+
+.active {
+  color: #f04b4b;
+}
+
+.padding {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.heading {
+  font-size: 3em;
+  font-weight: 900;
+}
+
+.para {
+  line-height: 1.5;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 1.5em 0;
+}
+
+.btn-main {
+  font-size: 1.1em;
+  font-weight: 900;
+  padding: 1.2em;
+}
+
+.middle {
+  text-align: center;
+}
+
+/* Specific Styles */
+
+.header {
+  font-size: 1.2em;
+  position: absolute;
+}
+
+.header .brand {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.header li {
+  margin-left: 2em;
+}
+
+.header a {
+  color: white;
+}
+
+/* Hero Section */
+
+.hero {
+  background: linear-gradient(#3f4daa, #3f4daa85), url(../banner.png);
+  color: white;
+  padding-top: 4em;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-text {
+  padding-right: 2em;
+}
+
+/* About Section */
+
+.about-text p {
+  color: #6a6970;
+  font-size: 1.2em;
+}
+
+/* Services section */
+
+.services {
+  background: #dfecfe;
+}
+
+.services-card {
+  border: 2px dashed red;
+  padding: 1em;
+  margin: 2em 0;
+}
+
+.services-card h4 {
+  font-size: 1.7em;
+  font-weight: 900;
+}
+
+.services-card p {
+  color: #6a6970;
+  margin-top: 1em;
+  font-weight: 700;
+}
+
+/* Schedule */
+
+.schedule-div {
+  margin-top: 4em;
+}
+
+.schedule-dates .dates {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  border: 2px dashed #f04b4b;
+  margin-bottom: 5rem;
+  padding: 1.5em;
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.schedule-dates .active-date {
+  background-color: #f04b4b;
+  color: white;
+}
+
+.schedule-article {
+  margin-bottom: 5.5rem;
+}
+
+.schedule-article h4 {
+  font-size: 2em;
+}
+
+.schedule-article p {
+  color: #6a6970;
+  font-size: 1.2em;
+  margin: 1em 0;
+}
+
+.schedule-article-img img {
+  border-radius: 0.5em;
+}
+
+.schedule .mobile-link{
+  display: none;
+}
+
+/* Info */
+
+.info {
+  background: #dfecfe;
+}
+
+.info-card {
+  padding: 1em;
+  /* border: 1px solid black; */
+}
+
+.info-card h4 {
+  font-size: 2em;
+  margin: 0.5em 0;
+}
+
+.info-card p {
+  margin: 0;
+}
+
+.active-card {
+  background-color: #f04b4b;
+  border-radius: 0.5em;
+  color: white;
+}
+
+/* Video */
+
+.video-div {
+  margin-top: 4em;
+  margin-bottom: 4em;
+  height: 0;
+  width: 100%;
+  padding-bottom: 70vh;
+  position: relative;
+}
+
+.video iframe {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 1em;
+}
+
+/* News */
+
+.news {
+  background: #dfecfe;
+  padding-bottom: 3em;
+}
+
+.news h4 {
+  font-size: 2em;
+  margin: 0.5em 0;
+  font-weight: 700;
+}
+
+.news p {
+  color: #6a6970;
+  font-size: 1.2em;
+  margin: 1em 0;
+}
+
+.news a {
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+/* Footer */
+
+.footer {
+  background: #23357b;
+  color: #9397aa;
+}
+
+.footer h4 {
+  font-size: 2em;
+  margin: 0.5em 0;
+  font-weight: 700;
+  color: white;
+}
+
+.footer p {
+  color: #9397aa;
+  font-size: 1.2em;
+  margin: 1em 0;
+}
+
+.social i,
+.quick-links li {
+  margin-right: 0.5em;
+  font-size: 1.2em;
+}
+
+.lower-footer {
+  background: rgb(21, 44, 105);
+  padding: 2em;
+}
+
+/* Mobile Approach */
+
+@media screen and (max-width: 786px) {
+  /* general Classes */
+
+  html {
+    font-size: 12px;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .flex {
+    display: inline-block;
+  }
+
+  .flex-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flex-column {
+    flex-direction: column;
+  }
+
+  /* Hero */
+  .hero .hero-text {
+    margin-bottom: 2em;
+  }
+
+  /* About */
+  .about .about-img{
+    order: 2;
+    margin-top: 2em;
+  }
+
+  /* Schedule */
+
+  .schedule .schedule-dates {
+    display: none;
+  }
+
+  .schedule-div {
+    margin-top: 0;
+  }
+
+  .schedule-article {
+    margin-bottom: 0;
+  }
+
+  .schedule-article-text {
+    margin-top: 2em;
+    margin-bottom: 4em;
+  }
+
+  .schedule .mobile-link{
+    display: inline-block;
+  }
+
+  /* About */
+
+  .about .about-text {
+    margin-top: 2em;
+  }
+
+  /* Info */
+
+  .info-card {
+    margin-bottom: 2em;
+  }
+
+  /* Video */
+
+  .video-div {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  /* News */
+
+  .news {
+    padding-bottom: 0;
+  }
+
+  .news-article {
+    margin-bottom: 2em;
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+  }
+
+  .footer li {
+    margin-bottom: 1em;
+  }
+
+  .footer img {
+    width: 50%;
+    margin-bottom: 2em;
+  }
+}
